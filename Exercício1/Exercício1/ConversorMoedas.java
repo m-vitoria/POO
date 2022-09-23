@@ -1,3 +1,4 @@
+package Exercício1;
 public class ConversorMoedas {
     public static double dollarToReall(double quantDollar, double precoDollar) {
         double resultado = quantDollar * precoDollar;

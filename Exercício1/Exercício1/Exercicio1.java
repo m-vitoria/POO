@@ -1,3 +1,5 @@
+package Exercício1;
+
 public class Exercicio1{
     private double precoDollar;
     private double quantDollar;
@@ -17,7 +19,7 @@ public class Exercicio1{
     public double setQuantDollar(double quantDollar){
         return this.quantDollar = quantDollar;
     }
-    public void setValorReais(double valorReais) {
-         this.valorReais = valorReais;
+    public double setValorReais(double valorReais) {
+        return this.valorReais = valorReais;
     }
 }
