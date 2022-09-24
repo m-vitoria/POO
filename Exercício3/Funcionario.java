@@ -18,20 +18,19 @@ public class Funcionario {
     public void setName(String name) {
         this.name = name;
     }
-    public double setGrossSalary(double grossSalary){
-        return this.grossSalary = grossSalary;
+    public void setGrossSalary(double grossSalary){
+        this.grossSalary = grossSalary;
     }
-    public double setTax(double tax){
-        return this.tax = tax;
+    public void setTax(double tax){
+        this.tax = tax;
     }
 
     public double salary(){
         double salary = grossSalary - tax;
         return salary;
     }
-    public double aumento(double percentage){
-        double aumentoSalary = grossSalary + (grossSalary * (percentage / 100));
-        return aumentoSalary;
+    public void aumento(double percentage){
+        this.grossSalary = this.salary() + (this.grossSalary * 0.10);
     }
 
 }

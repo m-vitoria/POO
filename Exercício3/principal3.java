@@ -19,14 +19,14 @@ public class principal3 {
         fun.setTax(sc.nextDouble());
 
         System.out.println();              
-        System.out.println("Employee: " + fun);              
+        System.out.printf("Employee: %.2f", fun.name, fun.salary());              
         System.out.println();              
         System.out.print("Which percentage to increase salary? ");
         double percentage = sc.nextDouble();              
-        fun.setGrossSalary(percentage);   
+        fun.aumento(percentage);   
 
         System.out.println();              
-        System.out.println("Updated data: " + fun.aumento(percentage));              
+        System.out.printf("Updated data: %.2f", fun.getGrossSalary());              
         sc.close();
     }
 }
